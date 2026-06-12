@@ -49,6 +49,32 @@
             text-align: center;
             z-index: 2;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Circular Profile Image Style */
+        .profile-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgba(131, 138, 248, 0.5);
+            box-shadow: 0 0 25px rgba(99, 102, 241, 0.3);
+            margin-bottom: 24px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .profile-circle:hover {
+            transform: scale(1.05);
+            border-color: rgba(131, 138, 248, 0.9);
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h1 {
@@ -75,7 +101,7 @@
             width: 60px;
             height: 4px;
             background: linear-gradient(90deg, #6366f1, #8b5cf6);
-            margin: 24px auto 0;
+            margin-top: 24px;
             border-radius: 2px;
             opacity: 0.8;
         }
@@ -92,6 +118,11 @@
             h1 {
                 font-size: 3rem;
             }
+            .profile-circle {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 16px;
+            }
             .accent-bar {
                 width: 40px;
                 height: 3px;
@@ -105,12 +136,14 @@
     <!-- Background visual elements -->
     <div class="glow"></div>
     <div class="glow-2"></div>
+
+    <!-- Main Content -->
+    <div class="container">
         <!-- Profile Image Container -->
         <div class="profile-circle">
             <img src="Screenshot_2026_0612_110531.png" alt="Ambrish Yadav">
         </div>
-    <!-- Main Content -->
-    <div class="container">
+        
         <h1>Ambrish Yadav</h1>
         <div class="accent-bar"></div>
     </div>
